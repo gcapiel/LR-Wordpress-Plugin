@@ -250,7 +250,7 @@ var handleMainResourceModal = function(src, direct){
 						lrConsole("qmarkUrl: ", qmarkUrl);
 						var imageUrl = qmarkUrl? qmarkUrl:"/images/qmark.png";
 						
-						currentObject.image = (data.hasScreenshot !== true) ? imageUrl : serviceHost + "/screenshot/" + md5;
+						currentObject.image = (data.hasScreenshot !== true) ? imageUrl : serviceHost + "screenshot/" + md5;
 						currentObject.image = self.getImageSrc(data.url, currentObject.image);
 						currentObject.hasScreenshot = currentObject.image != imageUrl;				
 						
